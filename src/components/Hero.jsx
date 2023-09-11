@@ -12,9 +12,9 @@ const Hero = () => {
         />
       </div>
       <h1>Hola, soy Juan Ignacio Colli</h1>
-      <h2>
+      <h3>
         Soy un desarrollador full stack junior, especializado en el MERN stack
-      </h2>
+      </h3>
     </section>
   );
 };

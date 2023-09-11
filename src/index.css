@@ -23,8 +23,18 @@ section {
 }
 
 h1 {
-  color: #000;
   font-family: 'Black Ops One', cursive;
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+h2 {
+  font-family: 'Black Ops One', cursive;
+  font-size: 3em;
+  line-height: 1.1;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.4;
 }
