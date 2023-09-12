@@ -36,13 +36,13 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#tecnologias">
-                Tecnologias
+              <a className="nav-link" href="#proyectos">
+                Proyectos
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#proyectos">
-                Proyectos
+              <a className="nav-link" href="#tecnologias">
+                Tecnologias
               </a>
             </li>
             <li className="nav-item">
