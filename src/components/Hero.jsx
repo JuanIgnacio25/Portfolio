@@ -11,9 +11,9 @@ const Hero = () => {
           className="img-juan"
         />
       </div>
-      <h1>Hola, soy Juan Ignacio Colli</h1>
+      <h1>Juan Ignacio Colli</h1>
       <h3>
-        Soy un desarrollador full stack junior, especializado en el MERN stack
+        Desarrolador Web Full Stack - MERN Stack
       </h3>
     </section>
   );
