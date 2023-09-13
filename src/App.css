@@ -205,6 +205,71 @@
 
 /* Tecnologias */
 
+.technologies h1 {
+  font-size: 4rem;
+  color: #fff;
+  justify-self: start;
+  margin-bottom: 100px;
+}
+
+.technologies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 100vh;
+  margin-top: 13vh;
+  background: #000;
+}
+
+.technologies-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70vw;
+  padding: 30px;
+}
+
+.technologies-container i {
+  color: #fff;
+  font-size: 45px;
+}
+
+.technologies-container p {
+  font-size: 16px;
+  font-weight: 900;
+  color: #f5f6f7;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+}
+
+.technologie {
+  width: 75%;
+  height: auto;
+  background-color: #000;
+  border-radius: 50%;
+  transition: box-shadow 0.3s ease;
+}
+
+.technologie:hover {
+  box-shadow: 0 0 20px rgba(245, 243, 243, 0.863), 0 0 40px rgba(255, 255, 255, 0.589);
+  /* Sombra en hover */
+}
+
+.technologie i,
+.technologie p {
+  pointer-events: none;
+}
+
+
 
 
 
