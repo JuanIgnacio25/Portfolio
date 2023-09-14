@@ -1,68 +1,106 @@
-import { BiLogoJavascript , BiLogoHtml5 , BiLogoMongodb , BiLogoCss3 , BiLogoGit} from "react-icons/bi";
-import {FaNode , FaBootstrap , FaReact} from 'react-icons/fa6'
-import {SiExpress , SiMongoose , SiHandlebarsdotjs , SiJsonwebtokens} from 'react-icons/si'
+//Technologies logos
+import {
+  BiLogoJavascript,
+  BiLogoHtml5,
+  BiLogoMongodb,
+  BiLogoCss3,
+  BiLogoGit,
+} from "react-icons/bi";
+import { FaNode, FaBootstrap, FaReact } from "react-icons/fa6";
+import {
+  SiExpress,
+  SiMongoose,
+  SiHandlebarsdotjs,
+  SiJsonwebtokens,
+} from "react-icons/si";
+//Projects images
+import proyectoec from "../assets/proyecto-ec.png";
+import proyectoec2 from "../assets/proyecto-ec2.png";
 
 const technologies = [
   {
     id: 1,
     logo: BiLogoJavascript,
-    name: "JAVASCRIPT",
+    title: "JAVASCRIPT",
   },
   {
-    id:2,
+    id: 2,
     logo: BiLogoHtml5,
-    name: 'HTML'
+    title: "HTML",
   },
   {
-    id:3,
+    id: 3,
     logo: FaNode,
-    name: 'NODE JS'
+    title: "NODE JS",
   },
   {
-    id:4,
+    id: 4,
     logo: BiLogoMongodb,
-    name: 'MONGO DB'
+    title: "MONGO DB",
   },
   {
-    id:5,
+    id: 5,
     logo: SiExpress,
-    name: 'EXPRESS'
+    title: "EXPRESS",
   },
   {
-    id:6,
+    id: 6,
     logo: BiLogoCss3,
-    name: 'CSS'
+    title: "CSS",
   },
   {
-    id:7,
+    id: 7,
     logo: BiLogoGit,
-    name: 'GIT'
+    title: "GIT",
   },
   {
-    id:8,
+    id: 8,
     logo: SiMongoose,
-    name: 'MONGOOSE'
+    title: "MONGOOSE",
   },
   {
-    id:9,
+    id: 9,
     logo: FaBootstrap,
-    name: 'BOOTSTRAP'
+    title: "BOOTSTRAP",
   },
   {
-    id:10,
+    id: 10,
     logo: FaReact,
-    name: 'REACT'
+    title: "REACT",
   },
   {
-    id:11,
+    id: 11,
     logo: SiHandlebarsdotjs,
-    name: 'HANDLEBARS'
+    title: "HANDLEBARS",
   },
   {
-    id:12,
+    id: 12,
     logo: SiJsonwebtokens,
-    name: 'JWT'
+    title: "JWT",
   },
 ];
 
-export { technologies };
+const projects = [
+  {
+    id: 1,
+    title: "E-commerce MVC",
+    img: proyectoec,
+    deploy_url:
+      "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
+    gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
+    project_technologies:
+      "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
+  },
+  {
+    id: 2,
+    title: "E-commerce",
+    img: proyectoec2,
+    deploy_url:
+      "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
+    gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
+    project_technologies:
+      "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
+  }
+];
+
+export { technologies, projects };
