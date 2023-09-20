@@ -59,7 +59,7 @@
   background: #000;
 }
 
-.about-me h2 {
+.about-me h1 {
   color: #fff;
 }
 
@@ -81,12 +81,14 @@
   flex-direction: column;
   align-items: center;
   width: 20vw;
+  max-width: 330px;
   margin-right: 70px
 }
 
 .about-me-description {
   text-align: left;
   width: 60vw;
+  max-width: 1000px;
 }
 
 .cv-button {
@@ -108,13 +110,11 @@
 
 /* Projects */
 
-.projects h2 {
+.projects h1 {
   color: #000;
-  justify-self: start;
 }
 
 .projects h3 {
-  font-size: 1.7em;
   color: #fff;
 }
 
@@ -129,7 +129,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .projects-container {
@@ -157,7 +157,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 400px;
+  max-height: 65vh;
   width: 80%;
   margin-top: 20px;
   position: relative;
@@ -206,7 +207,6 @@
 /* Technologies */
 
 .technologies h1 {
-  font-size: 4rem;
   color: #fff;
   justify-self: start;
   margin-bottom: 100px;
@@ -238,7 +238,6 @@
 }
 
 .technologies-container p {
-  font-size: 16px;
   font-weight: 900;
   color: #f5f6f7;
 }
@@ -276,23 +275,22 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 38vh;
+  height: 300px;
   background: #000;
 }
 
 .contact-container {
   padding-top: 13px;
   background: #544;
-  width: 40%;
-  height: 20vh;
+  width: 600px;
+  height: 150px;
   border-radius: 20px;
   border: 3px solid #bbb;
   box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
   -webkit-box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
   -moz-box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
   position: relative;
-  top: 20vh;
-  font-family: 'Quicksand', sans-serif;
+  top: 150px;
 }
 
 .contact {
@@ -302,7 +300,6 @@
 
 .contact p {
   color: #ccc;
-  font-size: 18px;
 }
 
 /* Footer */
@@ -353,18 +350,146 @@ footer {
 
 
 
+@media screen and (max-width: 1400px) {
+
+  .project h3 {
+    font-size: 1.5em;
+  }
+
+  .projects p {
+    font-size: 0.9em;
+  }
+
+  .project-title {
+    margin-top: 80px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+
+  .projects-container {
+    margin-top: 30px;
+  }
+
+
+  .project {
+    height: 350px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+
+  .project img {
+    height: 250px;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .project-description {
+    height: 28%;
+  }
+}
+
 
 
 /* Responsive */
 @media screen and (max-width: 767px) {
+
+  /* NavBar */
   .navbar-brand {
     display: none;
   }
 
   .navbar {
-    position: static;
+    position: static !important;
     z-index: auto;
     top: auto;
     height: auto;
   }
+
+  .nav-container {
+    text-align: center;
+  }
+
+  /* Hero */
+  .hero {
+    margin: auto;
+  }
+
+  .img-container {
+    height: 180px;
+    width: 180px;
+  }
+
+  /* About me */
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-me-title {
+    width: 180px;
+    margin: 7px;
+  }
+
+  .cv-button {
+    border: 2px solid #322;
+    border-radius: 4px;
+    font-size: 0.75em;
+    padding: 4px;
+    margin: 10px;
+  }
+
+  .about-me-description {
+    text-align: center;
+    width: 450px;
+  }
+
+  /* Proyectos */
+  .projects h3 {
+    font-size: 1.2em;
+  }
+
+  .projects-container {
+    margin-top: 10px;
+  }
+
+
+  .project {
+    height: 280px;
+    width: 65%;
+    margin-bottom: 30px;
+  }
+
+  .project img {
+    height: 250px;
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .project-description {
+    height: 31%;
+    width: 95%;
+  }
+
+  /* Technologies */
+  .technologies-container i {
+    font-size: 35px;
+  }
+
+  /* Contact */
+
+  .contact-container {
+    padding-top: 13px;
+    background: #544;
+    width: 400px;
+    height: 120px;
+    border-radius: 20px;
+    border: 3px solid #bbb;
+    box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
+    -webkit-box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
+    -moz-box-shadow: 5px 5px 11px 1px rgba(6, 6, 6, 0.75);
+    position: relative;
+    top: 150px;
+  }
+
 }

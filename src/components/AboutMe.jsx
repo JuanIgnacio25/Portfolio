@@ -6,7 +6,7 @@ const AboutMe = () => {
     <section id="sobre-mi" className="about-me container-fluid">
       <div className="about-me-container">
         <div className="about-me-title">
-          <h2>Sobre Mi</h2>
+          <h1>Sobre Mi</h1>
           <a href={Cv} target="_blank">
             <button className="cv-button">Descargar CV</button>
           </a>
