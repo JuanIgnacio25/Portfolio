@@ -1,4 +1,5 @@
 import NavBar from "./components/NavBar"
+import SideBar from "./components/SideBar"
 import Hero from "./components/Hero"
 import AboutMe from "./components/AboutMe"
 import Projects from "./components/Projects"
@@ -13,6 +14,7 @@ function App() {
   return (
     <div className='App'>
       <NavBar/>
+      <SideBar/>
       <Hero/>
       <AboutMe/>
       <Projects/>

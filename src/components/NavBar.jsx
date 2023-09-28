@@ -2,7 +2,7 @@ import React from "react";
 
 const NavBar = () => {
   return (
-    <nav className="navbar navbar-expand-md navbar-light">
+    <nav className="navbar navbar-expand-md navbar-dark">
       <div className="container-fluid nav-container">
         <button
           className="navbar-toggler"
@@ -25,11 +25,6 @@ const NavBar = () => {
             />
           </a>
           <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Inicio
-              </a>
-            </li>
             <li className="nav-item">
               <a className="nav-link" href="#sobre-mi" aria-current="page">
                 Sobre Mi
