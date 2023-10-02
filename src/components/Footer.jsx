@@ -38,7 +38,6 @@ const Footer = () => {
       </div>
       <div className="copyrights">
         <p>Creado por Juan Ignacio Colli (2023) &#169;</p>
-        
       </div>
     </footer>
   );

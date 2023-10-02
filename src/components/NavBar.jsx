@@ -19,9 +19,9 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <a className="navbar-brand" href="#">
             <img
-              src="/LogoPortfolio.png"
+              src="/logo.svg"
               width="50px"
-              alt="Logo J-ignacio de la barra de navegacion"
+              alt="Logo del porfolio"
             />
           </a>
           <ul className="navbar-nav">
