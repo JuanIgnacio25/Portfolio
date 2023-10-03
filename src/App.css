@@ -18,6 +18,15 @@
   margin: 20px 0px;
 }
 
+.nav-item a {
+  color: #8892b0 !important;
+  transition: color 0.2s ease-in;
+}
+
+.nav-item a:hover {
+  color: #4fb !important;
+}
+
 /* SideBar */
 .left-sidebar {
   display: flex;
@@ -497,19 +506,19 @@ footer {
 
 
   .technologies-container i {
-    color: #4fb;
+    color: #a8b2d1;
   }
   
-  .technologies-container p {
+  /* .technologies-container p {
     color: #4fb;
-  }
+  } */
 
-  .social-network-icons a {
+  /* .social-network-icons a {
     border: 2px solid #4fb;
-  }
+  } */
   
   .social-network-icons i {
-    color: #4fb;
+    color: #a8b2d1;
   }
   
 }
@@ -534,6 +543,26 @@ footer {
   .nav-container {
     text-align: center;
   }
+
+  .nav-item a {
+    color: #8892b0 !important;
+    font-size: 12px;
+    padding: 4px;
+  }
+
+  .navbar-toggler {
+    width: 37px;
+    height: 32px;
+    padding: 4px 4px !important;
+  }
+
+  .navbar-toggler-icon {
+    color: #a8b2d1 !important;
+    width: 20px !important;
+    height: 20px !important;
+  }
+
+
 
   /* SideBar */
   .side-bar {
@@ -584,13 +613,13 @@ footer {
 
 
   .project {
-    height: 280px;
+    height: 300px;
     width: 65%;
     margin-bottom: 30px;
   }
 
   .project img {
-    height: 250px;
+    height: 220px;
     width: 100%;
     padding-bottom: 5px;
   }
@@ -601,7 +630,15 @@ footer {
   }
 
   .overlay {
-    display: none;
+    opacity: 1;
+    position: static;
+    transform: translate(-0%, -0%);
+    text-align: center;
+  }
+
+  .overlay-icons i {
+    color: #a8b2d1;
+    font-size: 30px;
   }
 
   /* Technologies */
