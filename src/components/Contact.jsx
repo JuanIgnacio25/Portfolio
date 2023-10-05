@@ -6,9 +6,9 @@ const Contact = () => {
       <div className="contact-container">
         <h2>¡Hablemos!</h2>
         <p>
-          Aprendo y creo todos los dias.
+          <span className="contact-highlighted-text">Aprendo y creo</span> todos los dias.
           <br/>
-          Contactame para crear un proyecto juntos.
+          Contactame para <span className="contact-highlighted-text">crear un proyecto juntos</span>.
         </p>
       </div>
     </section>

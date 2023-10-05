@@ -4,14 +4,14 @@ import { SiSimilarweb } from "react-icons/si";
 import { projects } from "../constants/index";
 
 const Projects = () => {
+  const col_size = projects.length <= 1 ? '12' : '6';
   return (
     <section id="proyectos" className="projects container-fluid">
       <h1 className="project-title">Proyectos recientes</h1>
-
       <div className="container text-center projects-container">
         <div className="row">
           {projects.map((proj) => (
-            <div className="col-md-12 col-lg-6 project-col" key={proj.id}>
+            <div className={`col-md-12 col-lg-${col_size} project-col`} key={proj.id}>
               <div className="project">
                 <img src={proj.img} alt={`Proyecto ${proj.id}`} />
                 <div className="overlay">

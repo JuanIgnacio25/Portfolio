@@ -91,16 +91,16 @@ const projects = [
     project_technologies:
       "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
   },
-  {
-    id: 2,
-    title: "E-commerce",
-    img: proyectoec2,
-    deploy_url:
-      "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
-    gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
-    project_technologies:
-      "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
-  }
+  // {
+  //   id: 2,
+  //   title: "E-commerce",
+  //   img: proyectoec2,
+  //   deploy_url:
+  //     "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
+  //   gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
+  //   project_technologies:
+  //     "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
+  // }
 ];
 
 export { technologies, projects };
