@@ -13,7 +13,7 @@ const Hero = () => {
       </div>
       <h1>Juan Ignacio Colli</h1>
       <h3>
-        Desarrolador Web Full Stack - MERN Stack
+        Desarrolador Web - MERN Stack
       </h3>
     </section>
   );

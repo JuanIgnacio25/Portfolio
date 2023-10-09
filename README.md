@@ -22,7 +22,7 @@ Puedes acceder al proyecto desplegado en: https://boisterous-zabaione-b01b8d.net
 
 Seccion Hero:
 
-![Primera parte de la página web](assets/readme/Hero-captura.png)
+![Primera parte de la página web](src/assets/readme/Hero-captura.png)
 
 Sobre Mi:
 

@@ -17,7 +17,7 @@ const AboutMe = () => {
             <span className="about-me-highlighted-text">
               Juan Ignacio Colli
             </span>
-            , un apasionado Desarrollador Web Full stack con enfoque en el{" "}
+            , un apasionado Desarrollador Web con enfoque en el{" "}
             <span className="about-me-highlighted-text">MERN Stack</span>.
             Comencé hace un tiempo en el mundo de la programación, enfocándome
             en el backend, y en esta última etapa de mi aprendizaje, quise
