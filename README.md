@@ -26,16 +26,16 @@ Seccion Hero:
 
 Sobre Mi:
 
-![Sobre Mi](assets/readme/SobreMi-captura.png)
+![Sobre Mi](src/assets/readme/SobreMi-captura.png)
 
 Proyectos:
 
-![Proyectos](assets/readme/Proyectos-captura.png)
+![Proyectos](src/assets/readme/Proyectos-captura.png)
 
 Tecnologias:
 
-![Tecnologias](assets/readme/Tecnologias-captura.png)
+![Tecnologias](src/assets/readme/Tecnologias-captura.png)
 
 Contacto:
 
-![Contacto](assets/readme/Contacto-captura.png)
+![Contacto](src/assets/readme/Contacto-captura.png)
