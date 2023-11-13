@@ -5,7 +5,7 @@ import {BsEnvelopeFill} from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <footer className="d-flex flex-column align-items-center justify-content-center">
+    <footer className="d-flex flex-column align-items-center justify-content-center footer">
       <div className="social-network-icons d-flex flex-wrap align-items-center justify-content-center">
         <a
           href="https://github.com/JuanIgnacio25"
