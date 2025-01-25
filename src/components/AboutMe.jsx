@@ -43,16 +43,12 @@ const AboutMe = () => {
 
           <p>
             Cuando no estoy frente a la computadora, me gusta mantenerme activo.
-            El gimnasio es mi lugar de escape, donde descargo tensiones. Además,
-            soy un amante de la música, tocar el bajo es mi manera de expresar
-            mi creatividad y relajarme.
-          </p>
-
-          <p>
-            La vida social también es esencial para mí. Disfruto pasar tiempo
-            con mis amigos, mi familia y mi novia, compartiendo momentos y
-            experiencias. En casa, tengo la compañía de tres gatos encantadores
-            que hacen que cada día sea más alegre.
+            El <span className="about-me-highlighted-text">gimnasio</span> es mi
+            lugar donde descargo tensiones y paso buenos momentos tambien.
+            Disfruto pasar tiempo con mis amigos, mi familia, compartiendo
+            momentos y experiencias. Además, soy una persona muy apasoniada por
+            todo tipo de música, desde chico aprendi a tocar el bajo electrico y
+            hoy es una parte importante de mi vida tambien.
           </p>
           <p>
             Mi objetivo es{" "}
@@ -64,8 +60,9 @@ const AboutMe = () => {
           </p>
           <p>
             Gracias por visitar mi página y conocer un poco más sobre mí.
-            ¡Espero tener la oportunidad de colaborar contigo en futuros
-            proyectos!
+            ¡Espero tener la oportunidad de{" "}
+            <span className="about-me-highlighted-text">colaborar </span>{" "}
+            contigo en futuros proyectos!
           </p>
         </div>
       </div>

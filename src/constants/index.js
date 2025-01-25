@@ -7,31 +7,28 @@ import {
   BiLogoGit,
 } from "react-icons/bi";
 import { FaNode, FaBootstrap, FaReact } from "react-icons/fa6";
-import {
-  SiExpress,
-  SiMongoose,
-  SiHandlebarsdotjs,
-  SiJsonwebtokens,
-} from "react-icons/si";
+import { SiExpress, SiMongoose, SiJsonwebtokens } from "react-icons/si";
+
+import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
+
 //Projects images
 import proyectoec from "../assets/proyecto-ec.png";
-import proyectoec2 from "../assets/proyecto-ec2.png";
 
 const technologies = [
   {
     id: 1,
-    logo: BiLogoJavascript,
-    title: "JAVASCRIPT",
+    logo: FaNode,
+    title: "NODE JS",
   },
   {
     id: 2,
-    logo: BiLogoHtml5,
-    title: "HTML",
+    logo: SiNextdotjs,
+    title: "Next.js",
   },
   {
     id: 3,
-    logo: FaNode,
-    title: "NODE JS",
+    logo: FaReact,
+    title: "REACT",
   },
   {
     id: 4,
@@ -45,8 +42,8 @@ const technologies = [
   },
   {
     id: 6,
-    logo: BiLogoCss3,
-    title: "CSS",
+    logo: BiLogoJavascript,
+    title: "JAVASCRIPT",
   },
   {
     id: 7,
@@ -60,18 +57,18 @@ const technologies = [
   },
   {
     id: 9,
-    logo: FaBootstrap,
-    title: "BOOTSTRAP",
+    logo: BiLogoHtml5,
+    title: "HTML",
   },
   {
     id: 10,
-    logo: FaReact,
-    title: "REACT",
+    logo: BiLogoCss3,
+    title: "CSS",
   },
   {
     id: 11,
-    logo: SiHandlebarsdotjs,
-    title: "HANDLEBARS",
+    logo: SiTailwindcss,
+    title: "TailwindCSS",
   },
   {
     id: 12,

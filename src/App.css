@@ -591,6 +591,7 @@ footer {
   .about-me-container {
     display: flex;
     flex-direction: column;
+    min-height: 50vh;
   }
 
   .about-me-title {
@@ -619,6 +620,10 @@ footer {
     margin-top: 10px;
   }
 
+  .projects{
+    margin-top:100px;
+    min-height: 50vh;
+  }
 
   .project {
     height: 300px;
@@ -650,6 +655,9 @@ footer {
   }
 
   /* Technologies */
+  .technologies{
+    min-height: 50vh;
+  }
   .technologies-container i {
     font-size: 35px;
   }
