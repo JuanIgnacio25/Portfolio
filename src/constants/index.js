@@ -13,17 +13,18 @@ import { SiNextdotjs, SiTailwindcss } from "react-icons/si";
 
 //Projects images
 import proyectoec from "../assets/proyecto-ec.png";
+import proyectoelba from "../assets/proyecto-elba.png";
 
 const technologies = [
   {
     id: 1,
     logo: FaNode,
-    title: "NODE JS",
+    title: "NODE.JS",
   },
   {
     id: 2,
     logo: SiNextdotjs,
-    title: "Next.js",
+    title: "NEXT.JS",
   },
   {
     id: 3,
@@ -68,7 +69,7 @@ const technologies = [
   {
     id: 11,
     logo: SiTailwindcss,
-    title: "TailwindCSS",
+    title: "TAILWINDCSS",
   },
   {
     id: 12,
@@ -80,24 +81,24 @@ const technologies = [
 const projects = [
   {
     id: 1,
-    title: "E-commerce MVC",
+    title: "E-commerce Elba Catalini",
+    img: proyectoelba,
+    deploy_url:
+      "https://la-casa-del-accesorio-production.up.railway.app/",
+    gitHub_url: "https://github.com/JuanIgnacio25/La-casa-del-Accesorio",
+    project_technologies:
+      "Next.js, Next.js API routes, MongoDB, Mongoose, Nextauth, CSS , Tailwind.css, Nodemailer",
+  },
+  {
+    id: 2,
+    title: "E-commerce CoderHouse MVC",
     img: proyectoec,
     deploy_url:
       "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
     gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
     project_technologies:
-      "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
+      "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io",
   },
-  // {
-  //   id: 2,
-  //   title: "E-commerce",
-  //   img: proyectoec2,
-  //   deploy_url:
-  //     "https://ecommercejuanignaciocolli-nachocolli1.b4a.run/productos",
-  //   gitHub_url: "https://github.com/JuanIgnacio25/CoderHouse-ProyectoFinal",
-  //   project_technologies:
-  //     "Node.js, Express.js, MongoDB, Mongoose, Handlebars, Bootstrap 5, JWT, socket.io, Bcrypt",
-  // }
 ];
 
 export { technologies, projects };

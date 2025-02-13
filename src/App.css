@@ -202,100 +202,157 @@
 }
 
 /* Projects */
-.project h3 {
+
+/* Contenedor general del slider */
+.project-slider-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Contenedor del slider */
+.projects-container {
+  margin-top: 80px;
+  width: 70%;
+  max-width: 700px;
+}
+
+/* Ajusta cada slide para que ocupe el 100% del espacio disponible */
+.slick-slide {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor de cada proyecto */
+.project-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+
+/* Proyecto individual */
+.project {
+  position: relative;
+  border-radius: 10px;
+  border: 2px solid #8892b0;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  width: 100%;
+  
+}
+
+/* Imagen del proyecto */
+.project img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Hover para overlay */
+.project:hover img {
+  opacity: 0.1;
+}
+
+.project:hover .project-description {
+  opacity: 0.8;
+}
+
+.project-description{
+  padding: 20px;
+}
+
+.project-description h3{
   color: #4fb;
 }
 
-.projects p {
-  color: #8892b0;
-}
-
-.projects {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  margin-top: 50px;
-  min-height: 100vh;
-}
-
-.projects-container {
-  margin-top: 30px;
-}
-
-.project-col {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 425px;
-  max-height: 80vh;
-  width: 490px;
-  margin-top: 20px;
-  position: relative;
-  border: 3px solid #8892b0;
-  border-radius: 15px;
-}
-
-.project img {
-  height: 300px;
-  width: 100%;
-  padding-bottom: 10px;
-  border-radius: 15px 15px 0px 0px;
-  display: block;
-  transition: opacity 0.3s ease;
-}
-
-.project-description {
-  height: 28%;
-  width: 80%;
-  transition: opacity 0.3s ease;
-}
-
-
-
+/* Overlay */
 .overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  opacity: 0;
+  transition: all 0.3s ease;
 }
 
 .project:hover .overlay {
   opacity: 1;
 }
 
-.project:hover img {
-  opacity: 0.2;
-}
-
-.project:hover .project-description {
-  opacity: 0.3;
-}
-
-
+/* Íconos del overlay */
 .overlay-icons i {
   color: #8892b0;
-  font-size: 60px;
+  font-size: 50px;
   margin: 10px;
-  transition: color 0.3s ease-in;
+  transition: color 0.3s ease-in-out;
 }
-
 
 .overlay-icons i:hover {
   color: #4fb;
 }
+
+/* Ajuste de los controles del slider */
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  font-size: 0;
+  color: black;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+  font-size: 30px;
+}
+
+/* Puntos de navegación */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  color: #4fb;
+}
+
+.slick-dots li.slick-active button:before {
+  color: white;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .project {
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-container {
+    width: 95%;
+  }
+
+  .project {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project {
+    max-width: 90%;
+  }
+
+  .overlay-icons i {
+    font-size: 40px;
+  }
+}
+
 
 /* Technologies */
 
@@ -464,12 +521,6 @@ footer {
     margin-top: 5px;
   }
 
-  .project {
-    height: 425px;
-    max-height: 80vh;
-    width: 430px;
-  }
-
   .project img {
     height: 280px;
     width: 100%;
@@ -516,14 +567,6 @@ footer {
   .technologies-container i {
     color: #a8b2d1;
   }
-  
-  /* .technologies-container p {
-    color: #4fb;
-  } */
-
-  /* .social-network-icons a {
-    border: 2px solid #4fb;
-  } */
   
   .social-network-icons i {
     color: #a8b2d1;
@@ -627,12 +670,12 @@ footer {
 
   .project {
     height: 300px;
-    width: 330px;
+    width: 400px;
     margin-bottom: 30px;
   }
 
   .project img {
-    height: 220px;
+    height: auto;
     width: 100%;
     padding-bottom: 5px;
   }
@@ -722,7 +765,7 @@ footer {
   }
 
   .project img {
-    height: 200px;
+    height: auto;
     width: 100%;
     padding-bottom: 5px;
   }

@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
-import Projects from "./components/Projects";
+import ProjectsSlider from "./components/ProjectsSlider";
 import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -21,7 +21,7 @@ function App() {
       <SideBar />
       <Hero />
       <AboutMe />
-      <Projects />
+      <ProjectsSlider />
       <Technologies />
       <Contact />
       <Footer />
