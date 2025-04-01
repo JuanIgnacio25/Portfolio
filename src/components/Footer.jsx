@@ -1,5 +1,5 @@
 import React from "react";
-import {FaGithub , FaLinkedin , FaInstagramSquare} from 'react-icons/fa';
+import {FaGithub , FaLinkedin , FaWhatsapp} from 'react-icons/fa';
 import {BsEnvelopeFill} from 'react-icons/bs';
 
 
@@ -22,14 +22,14 @@ const Footer = () => {
           <i><FaLinkedin/></i>
         </a>
         <a
-          href="https://www.instagram.com/juani_colli/"
+          href="https://wa.me/5493471670274"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i><FaInstagramSquare/></i>
+          <i><FaWhatsapp/></i>
         </a>
         <a
-          href="mailto:nachocolli1@gmail.com"
+          href="mailto:juanignaciocolli28@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >

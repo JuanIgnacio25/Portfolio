@@ -1,5 +1,5 @@
 import React from "react";
-import Cv from "../downloads/CvJuanIgnacioColli.pdf";
+import Cv from "../downloads/CvJuanIgnacioColli-FullStackDeveloper.pdf";
 
 const AboutMe = () => {
   return (
@@ -21,7 +21,11 @@ const AboutMe = () => {
             <span className="about-me-highlighted-text">MERN Stack</span>.
             Comencé hace un tiempo en el mundo de la programación, enfocándome
             en el backend, y en esta última etapa de mi aprendizaje, quise
-            incorporar frontend a mis habilidades usando React."
+            incorporar frontend a mis habilidades usando{" "}
+            <span className="about-me-highlighted-text">React y Next</span>{" "}
+            junto con{" "}
+            <span className="about-me-highlighted-text">Tailwind</span> para los
+            estilos.
           </p>
           <p>
             Soy una persona muy{" "}
@@ -47,8 +51,10 @@ const AboutMe = () => {
             lugar donde descargo tensiones y paso buenos momentos tambien.
             Disfruto pasar tiempo con mis amigos, mi familia, compartiendo
             momentos y experiencias. Además, soy una persona muy apasoniada por
-            todo tipo de música, desde chico aprendi a tocar el bajo electrico y
-            hoy es una parte importante de mi vida tambien.
+            todo tipo de{" "}
+            <span className="about-me-highlighted-text">música</span>, desde
+            chico aprendi a tocar el bajo electrico y hoy es una parte
+            importante de mi vida tambien.
           </p>
           <p>
             Mi objetivo es{" "}

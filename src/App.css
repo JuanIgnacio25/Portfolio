@@ -143,8 +143,9 @@
   height: 100%;
   border-radius: 50%;
   border: 3px solid #4fb;
+  background: #0a172f;
   object-fit: cover;
-  object-position: top;
+  object-position: center;
 }
 
 /* About Me */

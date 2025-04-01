@@ -1,5 +1,5 @@
 import React from "react";
-import FotoPerfil from '../assets/fotoPerfil.jpg'
+import FotoPerfil from '../assets/FotoPerfil.png'
 
 const Hero = () => {
   return (
