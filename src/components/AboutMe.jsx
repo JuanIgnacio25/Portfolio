@@ -1,5 +1,4 @@
 import React from "react";
-import Cv from "../downloads/CvJuanIgnacioColli-FullStackDeveloper.pdf";
 
 const AboutMe = () => {
   return (
@@ -7,7 +6,7 @@ const AboutMe = () => {
       <div className="about-me-container">
         <div className="about-me-title">
           <h1>Sobre Mi</h1>
-          <a href={Cv} target="_blank">
+          <a href={"/public/downloads/CvJuanIgnacioColliFullStackDeveloper.pdf"} target="_blank" rel="noopener noreferrer">
             <button className="cv-button">Curriculum</button>
           </a>
         </div>
