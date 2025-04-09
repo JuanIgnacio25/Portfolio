@@ -1,3 +1,9 @@
+.app {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20vh;
+}
+
 /* NavBar */
 .navbar {
   position: fixed !important;
@@ -8,26 +14,19 @@
   background: #0a172f;
 }
 
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
-}
-
 .nav-container {
   padding: 0px 40px !important;
-  margin: 20px 0px;
+  margin: 0px 0px;
 }
 
-.navbar-nav{
+.navbar-nav {
   padding-bottom: 5px;
 }
-
-
 
 .nav-item a {
   color: #8892b0 !important;
   border-bottom: 1px solid transparent;
-  transition: color 0.2s ease-in , border-bottom 0.2s ease-in;
+  transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
 }
 
 .nav-item a:hover {
@@ -69,11 +68,11 @@
   transition: color 0.3s ease-in;
 }
 
-.left-sidebar :hover{
+.left-sidebar :hover {
   transform: translateY(-1px);
 }
 
-.left-sidebar :hover i{
+.left-sidebar :hover i {
   color: #4fb;
 }
 
@@ -94,10 +93,10 @@
 }
 
 .right-sidebar p {
-  transition: color 0.3s ease-in , transform 0.5s ease;
+  transition: color 0.3s ease-in, transform 0.5s ease;
 }
 
-.right-sidebar a :hover{
+.right-sidebar a :hover {
   color: #4fb;
   transform: translateX(-2px);
 }
@@ -114,7 +113,6 @@
   background: #8892b0;
 }
 
-
 /* Hero */
 .hero h3 {
   color: #4fb;
@@ -127,9 +125,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   text-align: center;
-  margin: 10vh 0px 10vh 0px;
 }
-
 
 .img-container {
   display: flex;
@@ -149,6 +145,9 @@
 }
 
 /* About Me */
+#sobre-mi {
+  scroll-margin-top: 12vh;
+}
 
 .about-me p {
   color: #8892b0;
@@ -160,7 +159,6 @@
   align-items: center;
   justify-content: center;
   min-height: 87vh;
-  margin-top: 13vh;
 }
 
 .about-me-title {
@@ -170,7 +168,7 @@
   text-align: center;
   width: 20vw;
   max-width: 330px;
-  margin-right: 70px
+  margin-right: 70px;
 }
 
 .about-me-description {
@@ -203,27 +201,15 @@
 }
 
 /* Projects */
+#proyectos {
+  scroll-margin-top: 12vh;
+}
 
-/* Contenedor general del slider */
-.project-slider-container{
+.projects-container {
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
-}
-
-/* Contenedor del slider */
-.projects-container {
-  margin-top: 80px;
-  width: 70%;
-  max-width: 700px;
-}
-
-/* Ajusta cada slide para que ocupe el 100% del espacio disponible */
-.slick-slide {
-  display: flex !important;
-  justify-content: center;
-  align-items: center;
+  max-height: 80vh;
 }
 
 /* Contenedor de cada proyecto */
@@ -232,7 +218,7 @@
   justify-content: center;
   align-items: center;
   padding: 10px;
-  width: 100%;
+  width: 70%;
 }
 
 /* Proyecto individual */
@@ -244,14 +230,15 @@
   text-align: center;
   transition: transform 0.3s ease-in-out;
   width: 100%;
-  
 }
 
 /* Imagen del proyecto */
 .project img {
   width: 100%;
-  height: 400px;
+  height: auto;
+  max-height: 50vh;
   object-fit: cover;
+  object-position: top;
   border-radius: 10px 10px 0px 0px;
   transition: opacity 0.3s ease-in-out;
 }
@@ -265,11 +252,11 @@
   opacity: 0.8;
 }
 
-.project-description{
+.project-description {
   padding: 20px;
 }
 
-.project-description h3{
+.project-description h3 {
   color: #4fb;
 }
 
@@ -300,66 +287,14 @@
   color: #4fb;
 }
 
-/* Ajuste de los controles del slider */
-.slick-prev,
-.slick-next {
-  z-index: 10;
-  font-size: 0;
-  color: black;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-  font-size: 30px;
-}
-
-/* Puntos de navegación */
-.slick-dots {
-  bottom: -30px;
-}
-
-.slick-dots li button:before {
-  color: #4fb;
-}
-
-.slick-dots li.slick-active button:before {
-  color: white;
-}
-
-/* Responsivo */
-@media (max-width: 1024px) {
-  .project {
-    max-width: 700px;
-  }
-}
-
-@media (max-width: 768px) {
-  .projects-container {
-    width: 95%;
-  }
-
-  .project {
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .project {
-    max-width: 90%;
-  }
-
-  .overlay-icons i {
-    font-size: 40px;
-  }
-}
-
-
 /* Technologies */
+#tecnologias {
+  scroll-margin-top: 10vh;
+}
 
 .technologies h1 {
   justify-self: start;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .technologies {
@@ -368,8 +303,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  min-height: 100vh;
-  margin-top: 13vh;
+  margin-bottom: 5vh;
 }
 
 .technologies-container {
@@ -380,7 +314,6 @@
   min-width: 70vw;
   padding: 30px;
   text-align: center;
-
 }
 
 .technologies-container i {
@@ -411,7 +344,8 @@
 }
 
 .technologie:hover {
-  box-shadow: 0 0 20px rgba(4, 241, 126, 0.791), 0 0 40px rgba(15, 97, 114, 0.589);
+  box-shadow: 0 0 20px rgba(4, 241, 126, 0.791),
+    0 0 40px rgba(15, 97, 114, 0.589);
   /* Sombra en hover */
 }
 
@@ -436,7 +370,6 @@
   justify-content: center;
   text-align: center;
   height: 100px;
-  margin-top: 100px;
 }
 
 .contact-container {
@@ -460,18 +393,16 @@
   text-align: center;
 }
 
-
 /* Footer */
 footer {
   min-height: 50vh;
 }
 
-
 .footer-texto {
   font-size: 1.5rem;
   padding: 20px;
   margin-bottom: 30px;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 .social-network-icons a {
@@ -484,7 +415,7 @@ footer {
   margin: 85px 10px 10px 10px;
   border: 2px solid #8892b0;
   border-radius: 50%;
-  transition: transform 0.2s ease-in , border 0.2s ease-in;
+  transition: transform 0.2s ease-in, border 0.2s ease-in;
 }
 
 .social-network-icons i {
@@ -513,87 +444,40 @@ footer {
   color: #4fb;
 }
 
-
-
 @media screen and (max-width: 1199px) {
-
-  /* Projects */
-  .projects-container {
-    margin-top: 5px;
-  }
-
-  .project img {
-    height: 280px;
-    width: 100%;
-  }
-
-  .project-description {
-    height: 33%;
-    width: 80%;
-  }
-
   /* SideBar */
-
-
   .left-sidebar {
     top: 400px;
     left: 10px;
   }
-
-
   .left-sidebar i {
     font-size: 1.3rem;
   }
-
 }
 
 @media screen and (max-width: 990px) {
-
-  .project {
-    height: 350px;
-    max-height: 80vh;
-    width: 430px;
-    margin-top: 30px;
-  }
-
-  .project img {
-    height: 230px;
-  }
-
-  .project-description {
-    height: 33%;
-  }
-
-
   .technologies-container i {
     color: #a8b2d1;
   }
-  
+
   .social-network-icons i {
     color: #a8b2d1;
   }
-  
 }
-
-
 
 /* Responsive */
 @media screen and (max-width: 767px) {
+  .app {
+    gap: 12vh;
+  }
 
   /* NavBar */
-  .navbar-brand {
-    display: none;
-  }
-
-  .navbar {
-    position: static !important;
-    z-index: auto;
-    top: auto;
-    height: auto;
-  }
-
   .nav-container {
-    text-align: center;
+    margin: 0px;
+  }
+
+  .navbar{
+    padding: 0px !important;
   }
 
   .nav-item a {
@@ -614,7 +498,16 @@ footer {
     height: 20px !important;
   }
 
-
+  .navbar-collapse {
+    width: 100vw;
+    background-color: #0a172f;
+    padding: 0px 40px;
+    margin: 5px 0px;
+    position: absolute;
+    top: 56px; 
+    left: 0;
+    z-index: 1000;
+  }
 
   /* SideBar */
   .side-bar {
@@ -623,12 +516,18 @@ footer {
 
   /* Hero */
   .hero {
-    margin: auto;
+    margin-top: 12vh;
+    width: 100%;
   }
 
   .img-container {
     height: 180px;
     width: 180px;
+  }
+
+  /* Projects */
+  .project-col {
+    width: 90%;
   }
 
   /* About me */
@@ -644,7 +543,7 @@ footer {
   }
 
   .cv-button {
-    border: 2px solid #322;
+    border: 2px solid #4fb;
     border-radius: 4px;
     font-size: 0.75em;
     padding: 4px;
@@ -657,35 +556,7 @@ footer {
     padding: 5px;
   }
 
-
   /* Proyectos */
-
-  .projects-container {
-    margin-top: 10px;
-  }
-
-  .projects{
-    margin-top:100px;
-    min-height: 50vh;
-  }
-
-  .project {
-    height: 300px;
-    width: 400px;
-    margin-bottom: 30px;
-  }
-
-  .project img {
-    height: auto;
-    width: 100%;
-    padding-bottom: 5px;
-  }
-
-  .project-description {
-    height: 31%;
-    width: 95%;
-  }
-
   .overlay {
     opacity: 1;
     position: static;
@@ -699,7 +570,7 @@ footer {
   }
 
   /* Technologies */
-  .technologies{
+  .technologies {
     min-height: 50vh;
   }
   .technologies-container i {
@@ -713,7 +584,7 @@ footer {
     height: 120px;
   }
 
-  .contact-highlighted-text{
+  .contact-highlighted-text {
     color: #4fb;
   }
 
@@ -733,10 +604,18 @@ footer {
     padding: 20px;
     transition: color 0.3s ease-in;
   }
-
 }
 
 @media screen and (max-width: 460px) {
+  .app{
+    gap:18vh;
+  }
+
+  #sobre-mi,
+  #proyectos,
+  #tecnologias {
+    scroll-margin-top: 22vh;
+  } 
 
   /* Hero */
   .img-container {
@@ -745,38 +624,17 @@ footer {
   }
 
   /* About me */
-  .about-me-container {
-    margin-top: auto;
-  }
 
   .about-me-description {
-    width: 280px;
+    width: 90%;
   }
 
   /* Projects */
-  .projects-container {
-    margin-top: 10px;
-  }
-
-
-  .project {
-    height: 240px;
-    width: 250px;
-    margin-bottom: 30px;
-  }
 
   .project img {
     height: auto;
     width: 100%;
-    padding-bottom: 5px;
   }
-
-  .project-description {
-    height: 31%;
-    width: 95%;
-  }
-
-  /* Technologies */
 
   /* Contact */
   .contact {
@@ -790,6 +648,11 @@ footer {
   }
 
   /* Footer */
+
+  footer {
+    min-height: 30vh;
+  }
+
   .social-network-icons a {
     width: 40px;
     height: 40px;

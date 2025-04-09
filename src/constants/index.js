@@ -81,10 +81,10 @@ const technologies = [
 const projects = [
   {
     id: 1,
-    title: "E-commerce Elba Catalini",
+    title: "Sistema Web de gestion de pedidos - Elba Catalini",
     img: proyectoelba,
     deploy_url:
-      "https://la-casa-del-accesorio-production.up.railway.app/",
+      "https://www.elbacatalini.com",
     gitHub_url: "https://github.com/JuanIgnacio25/La-casa-del-Accesorio",
     project_technologies:
       "Next.js, Next.js API routes, MongoDB, Mongoose, Nextauth, CSS , Tailwind.css, Nodemailer",

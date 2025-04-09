@@ -2,7 +2,7 @@ import NavBar from "./components/NavBar";
 import SideBar from "./components/SideBar";
 import Hero from "./components/Hero";
 import AboutMe from "./components/AboutMe";
-import ProjectsSlider from "./components/ProjectsSlider";
+import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -16,12 +16,12 @@ function App() {
   }, [])
   
   return (
-    <div className="App">
+    <div className="app">
       <NavBar />
       <SideBar />
       <Hero />
       <AboutMe />
-      <ProjectsSlider />
+      <Projects />
       <Technologies />
       <Contact />
       <Footer />
