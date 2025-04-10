@@ -5,33 +5,46 @@
 }
 
 /* NavBar */
-.navbar {
-  position: fixed !important;
+
+.custom-navbar {
+  position: sticky;
   top: 0;
-  z-index: 1030;
-  height: 10vh;
-  width: 100%;
-  background: #0a172f;
+  z-index: 999;
+  background-color: #0a172f;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.nav-container {
-  padding: 0px 40px !important;
-  margin: 0px 0px;
+.custom-navbar-wrapper {
+  max-width: 90vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.navbar-nav {
-  padding-bottom: 5px;
+.custom-navbar-logo img {
+  height: 55px;
 }
 
-.nav-item a {
-  color: #8892b0 !important;
-  border-bottom: 1px solid transparent;
-  transition: color 0.2s ease-in, border-bottom 0.2s ease-in;
+.custom-navbar-toggler {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+  padding: 0.5rem;
 }
 
-.nav-item a:hover {
-  color: #4fb !important;
-  border-bottom: 1px solid #4fb;
+
+.custom-navbar-menu {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.custom-navbar-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 /* SideBar */
@@ -119,6 +132,7 @@
 }
 
 .hero {
+  margin-top: -35vh;
   min-height: 80vh;
   background-image: url(/fondoGrisRombo.png);
   background-size: cover;
@@ -146,7 +160,7 @@
 
 /* About Me */
 #sobre-mi {
-  scroll-margin-top: 12vh;
+  scroll-margin-top: 18vh;
 }
 
 .about-me p {
@@ -202,7 +216,7 @@
 
 /* Projects */
 #proyectos {
-  scroll-margin-top: 12vh;
+  scroll-margin-top: 18vh;
 }
 
 .projects-container {
@@ -289,7 +303,7 @@
 
 /* Technologies */
 #tecnologias {
-  scroll-margin-top: 10vh;
+  scroll-margin-top: 18vh;
 }
 
 .technologies h1 {
@@ -395,7 +409,7 @@
 
 /* Footer */
 footer {
-  min-height: 50vh;
+  min-height: 35vh;
 }
 
 .footer-texto {
@@ -468,45 +482,36 @@ footer {
 /* Responsive */
 @media screen and (max-width: 767px) {
   .app {
-    gap: 12vh;
+    gap: 15vh;
   }
 
   /* NavBar */
-  .nav-container {
-    margin: 0px;
+  .custom-navbar-logo img {
+    height: 50px;
   }
 
-  .navbar{
-    padding: 0px !important;
+  .custom-navbar-toggler {
+    display: block;
   }
 
-  .nav-item a {
-    color: #8892b0 !important;
-    font-size: 12px;
-    padding: 4px;
-  }
-
-  .navbar-toggler {
-    width: 37px;
-    height: 32px;
-    padding: 4px 4px !important;
-  }
-
-  .navbar-toggler-icon {
-    color: #a8b2d1 !important;
-    width: 20px !important;
-    height: 20px !important;
-  }
-
-  .navbar-collapse {
-    width: 100vw;
-    background-color: #0a172f;
-    padding: 0px 40px;
-    margin: 5px 0px;
+  .custom-navbar-menu {
     position: absolute;
-    top: 56px; 
+    top: 100%;
     left: 0;
-    z-index: 1000;
+    background-color: #0a172f;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+  }
+
+  .custom-navbar-menu.show {
+    max-height: 300px;
+    padding: 1rem 0;
   }
 
   /* SideBar */
@@ -516,7 +521,8 @@ footer {
 
   /* Hero */
   .hero {
-    margin-top: 12vh;
+    margin-top: -18vh;
+    min-height: 85vh;
     width: 100%;
   }
 
@@ -607,15 +613,20 @@ footer {
 }
 
 @media screen and (max-width: 460px) {
-  .app{
-    gap:18vh;
+  .app {
+    gap: 18vh;
   }
 
   #sobre-mi,
   #proyectos,
   #tecnologias {
     scroll-margin-top: 22vh;
-  } 
+  }
+
+  .custom-navbar-logo img {
+    height: 45px;
+  }
+
 
   /* Hero */
   .img-container {
